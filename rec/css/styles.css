@@ -1,0 +1,154 @@
+body {
+  background: rgb(221, 225, 235);
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/*Oculta bordes*/
+
+.border-primary {
+  border-color: hsl(0deg 0% 0% / 0%) !important;
+  max-height: 380px !important;
+}
+
+/* Center button */
+
+.game-center {
+  fill: rgb(0, 139, 160);
+}
+
+.game-center:active {
+  fill: rgb(78, 199, 218);
+}
+
+.game-center-auto {
+  fill: rgb(78, 199, 218);
+}
+
+/* Right button*/
+
+.game-right {
+  fill: rgb(255, 191, 0);
+  transform: rotate(90deg);
+}
+
+.game-right:active {
+  fill: rgb(252, 211, 90);
+}
+
+.game-right-auto {
+  transform: rotate(90deg);
+  fill: rgb(252, 211, 90);
+}
+
+/*Down button*/
+
+.game-down {
+  fill: rgb(0, 102, 255);
+  transform: rotate(180deg);
+}
+
+.game-down:active {
+  fill: rgb(79, 149, 255);
+}
+
+.game-down-auto {
+  transform: rotate(180deg);
+  fill: rgb(79, 149, 255);
+}
+
+/*Left button*/
+
+.game-left {
+  fill: rgb(25, 135, 84);
+  transform: rotate(270deg);
+}
+
+.game-left:active {
+  fill: rgb(82, 206, 148);
+}
+
+.game-left-auto {
+  fill: rgb(82, 206, 148);
+  transform: rotate(270deg);
+}
+
+/*Up button*/
+
+.game-up {
+  fill: rgb(212, 53, 69);
+}
+
+.game-up:active {
+  fill: rgb(247, 71, 89);
+  stroke: #000000;
+  stroke-width: 10;
+}
+
+.game-up-auto {
+  fill: rgb(247, 71, 89);
+}
+
+/*Tarjetas*/
+
+.card {
+  margin: 2%;
+  text-align: center;
+}
+
+/*Botones*/
+.buttons {
+  text-align: center;
+}
+
+button {
+  margin: 2%;
+  width: 100%;
+  height: 100%;
+}
+
+/*Pinta las lineas al ganar*/
+td.diagonalRising {
+  background: linear-gradient(135deg, #fff 0%, #fff 49.9%, #000000 50%, #000000 51%, #fff 51.1%, #fff 100%);
+}
+
+td.diagonalFalling {
+  background: linear-gradient(45deg, #fff 0%, #fff 49.9%, #000000 50%, #000000 51%, #fff 51.1%, #fff 100%);
+}
+
+td.vertical {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 48%, rgb(0, 0, 0) 50%, rgba(255, 255, 255, 1) 52%);
+}
+
+td.horizontal {
+  background: linear-gradient(180deg, #fff 0%, #fff 49.9%, #000000 50%, #000000 51%, #fff 51.1%, #fff 100%);
+}
+
+table {
+  width: 100%;
+  table-layout: auto;
+  text-align: center;
+}
+
+td {
+  width: 33.33%;
+  position: relative;
+  width: 100px;
+}
+
+td:after {
+  content: '';
+  display: block;
+  margin-top: 100%;
+}
+
+td .cell-content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
